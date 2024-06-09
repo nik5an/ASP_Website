@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Самостоятелна работа - Login Register</h1>
+<div class="w3ls-login box box--big">
+    <!-- form starts here -->
+    <div class="login-container">
+        <form asp-controller="Account" asp-action="Verify" method="post">
+            <div class="agile-field-txt">
+                <label><i class="fa fa-user" aria-hidden="true"></i> Username </label>
+                <input type="text" name="Name" placeholder="Въведете вашия username" required="" />
+            </div>
+            <div class="agile-field-txt">
+                <label><i class="fa fa-unlock-alt" aria-hidden="true"></i> Password </label>
+                <input type="password" name="Password" placeholder="Въведете вашата парола" required="" id="myInput" />
+                <div class="agile_label">
+                    <input id="check3" name="check3" type="checkbox" value="show password" onclick="myFunction()">
+                    <label class="check" for="check3">Покажи парола</label>
+                </div>
+            </div>
+            <!-- script for show password -->
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myInput");
+                    if (x.type === "password") {
+                        x.type = "text";
+                    } else {
+                        x.type = "password";
+                    }
+                }
+            </script>
+            <!-- //end script -->
+            <input type="submit" value="Влез">
+        </form>
+    </div>
+    <!-- //form ends here -->
+</div>

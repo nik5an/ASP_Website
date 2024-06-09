@@ -1,0 +1,124 @@
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 16px;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        background-image: url('../images/background.jpg');
+        background-size: cover;
+        text-align: center;
+    }
+
+    .w3ls-login {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 500px; /* Adjusted for the footer */
+    }
+
+    .login-container {
+        position: absolute;
+        top: 50%; /* Position the container at 50% from the top */
+        transform: translateY(-50%); /* Center the container vertically */
+        left: 0;
+        right: 0;
+        margin: auto; /* Center the container horizontally */
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        padding: 20px;
+        max-width: 550px;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 3.2em;
+        font-weight: 300;
+        text-transform: capitalize;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        letter-spacing: 3px;
+        padding: 1em;
+    }
+
+    .w3ls-login form {
+        margin: 0 auto;
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .w3ls-login label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+.w3ls-login input[type="text"],
+.w3ls-login input[type="password"] {
+    width: 100%;        
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    border: none;
+    border: 1px solid #eee;
+    border-radius: 30px;
+
+    margin-bottom: 20px;
+}
+
+.w3ls-login input[type=submit] {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    background: #02a39c;
+    color: #fff;
+    transition: background 0.3s;
+}
+
+    .w3ls-login input[type=submit]:hover {
+        background: #CDCDCD;
+    }
+
+    .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+        .footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            font-size: 16px;
+        }
+
+        .footer p {
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+
+            .footer p a {
+                color: #fd5c63;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+
+                .footer p a:hover {
+                    color: #fff;
+                }
